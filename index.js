@@ -329,15 +329,23 @@ var updateEmployeeRole = async() => {
       type: "input",
       message: "Which title role do you want?",
     },
+    {
+      name: "updateSalary",
+      type: "input",
+      message: "Which salary do you want for this role?",
+    },
 
   ]).then(function (input) { 
    connection.query(
     'UPDATE role SET ? WHERE ?',  
      [ {
-        id: input.departmentName,
+        title: input.departmentName,
       },
       {
         title: input.updateRoles,
+      },
+      {
+        salary: input.updateSalary,
       },
      ],
     function (err, result){
@@ -372,14 +380,16 @@ var updateManager = async() => {
     var managerInfo = choiceManger().indexOf(input.manager) + 1 
    connection.query(
     'Update employee SET ? WHERE ?',  
-     [ {
+     [ 
+      {
         id: input.employeeName,
       },
       {
         manager_id: managerInfo,
       },
+      
      ],
-    function (err, result){
+    function (err){
       if (err) throw err
       console.log('Updating an Employee with the manager...\n');
       console.table(input);
