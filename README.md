@@ -69,12 +69,6 @@ Guidelines:
 
 * Check out [SQL Bolt](https://sqlbolt.com/) for some extra MySQL instructions.
 
-## Minimum Requirements
-
-* Functional application.
-
-* GitHub repository with a unique name and a README describing the project.
-
 * The command-line application should allow users to:
 
   * Add departments, roles, employees
