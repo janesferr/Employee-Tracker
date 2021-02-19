@@ -10,11 +10,11 @@ INSERT INTO department(name) VALUES
 ('Customer Service');
 
 Insert into role(title, salary, department_id) VALUES
-('Marketing', 150000, 1),
-('Finance', 150000, 2),
-('Human Resources', 90000, 3),
-('Research', 90000, 8),
-('Development', 1300000, 5);
+('Marketer', 150000, 1),
+('Finance Analyst', 150000, 2),
+('HR Manager', 90000, 3),
+('Researcher', 90000, 8),
+('Engineer', 1300000, 5);
 
 Insert into employee(first_name, last_name, manager_id, role_id) VALUES
 ('John', 'Doe', 1, 2 ),

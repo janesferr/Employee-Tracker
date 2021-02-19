@@ -1,6 +1,7 @@
+drop database if exists employeelist;
 Create database employeelist;
 use employeelist;
-drop database if exists employeelist;
+
 
 Create table if not exists department(
     id int Primary key auto_increment,
